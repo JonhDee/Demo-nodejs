@@ -1,3 +1,4 @@
+feature/chong-hack
 ngôn ngữ: JS
 nèn tảng: nodeJS
 Framwork: Express
@@ -20,3 +21,7 @@ md5: mã hóa
 	nhược điểm:yếu, dễ suy ngược lại
 ---------------------
 signedCookie: chống thay đổi cookie người dùng-chống hack tài khoản
+=======
+# Demo-nodejs
+nodejs project
+master
