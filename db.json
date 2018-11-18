@@ -20,7 +20,19 @@
     {
       "name": "fdfsd",
       "phone": "0000000",
-      "id": "0bHyDEq2m"
+      "id": "0bHyDEq2m",
+      "email": "kishiz094@gmail.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+      "name": "ssda",
+      "phone": "123",
+      "id": "LcOSN2pJ4"
+    },
+    {
+      "name": "123",
+      "phone": "123456",
+      "id": "bkn8fJqD5"
     }
   ]
 }
