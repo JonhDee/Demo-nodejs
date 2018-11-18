@@ -3,6 +3,7 @@ var controller=require('../controller/users.controller');
 var router=express.Router();
 var validate=require('../validate/user.validate');
 
+
 router.get('/',controller.index);
 
 router.get('/search',controller.search);

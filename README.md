@@ -14,3 +14,9 @@ lowdb( database nhỏ)
 middleware : function(req,res,next){}
 
 ---------------------
+cookie: ứng dụng trong login-- lưu lại phiên làm việc đó
+---------------------
+md5: mã hóa
+	nhược điểm:yếu, dễ suy ngược lại
+---------------------
+signedCookie: chống thay đổi cookie người dùng-chống hack tài khoản

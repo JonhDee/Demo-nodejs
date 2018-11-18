@@ -1,7 +1,11 @@
 var express=require('express');
 var bodyParser=require('body-parser');
+var cookieParser=require('cookie-parser');
 
 var userRoutes=require('./routes/user.routes');
+var authRoutes=require('./routes/auth.route');
+var authMiddleware=require('./middleware/auth.middleware');
+
 
 var port=3000;
 
@@ -11,6 +15,7 @@ app.set('views','./views');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(cookieParser('chuoibatki'));
 
 app.use(express.static('public'));
 
@@ -20,9 +25,11 @@ app.get('/',function(req,res){
 	});
 });
 
-app.use('/users',userRoutes);
+app.use('/users',authMiddleware.requireAuth,userRoutes);
 
-app.listen(3000,function(){
+app.use('/auth',authRoutes);
+
+app.listen(port,function(){
 	console.log('Server listening on port' + port);
 });
 
