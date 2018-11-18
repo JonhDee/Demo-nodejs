@@ -9,3 +9,8 @@ Template-engines
 
 ---------------------
 lowdb( database nhỏ)
+
+---------------------
+middleware : function(req,res,next){}
+
+---------------------
